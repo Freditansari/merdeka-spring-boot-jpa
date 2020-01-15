@@ -27,4 +27,8 @@ public class Product {
     @Column(name = "productPrice", unique = true, nullable = false)
     private BigDecimal productPrice;
 
+    //technically optional but still needed to save data
+    @Column(name = "category_id", nullable = false)
+    private Long category_id;
+
 }
