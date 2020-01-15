@@ -24,7 +24,7 @@ public class Product {
     @Column(name = "productName", unique = true, nullable = false, length = 100)
     private String productName;
 
-    @Column(name = "productPrice", unique = true, nullable = false)
+    @Column(name = "productPrice", nullable = false)
     private BigDecimal productPrice;
 
     //technically optional but still needed to save data
